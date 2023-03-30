@@ -1,8 +1,7 @@
-import { Inter } from 'next/font/google'
+const Home = () => (
+  <>
+    <h1 className='text-xs'>Hola mundo</h1>
+  </>
+);
 
-
-export default function Home() {
-  return (
-    <></>
-  )
-}
+export default Home;
