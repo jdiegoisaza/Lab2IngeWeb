@@ -36,18 +36,8 @@
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/return-await": "off",
     "no-plusplus": "warn",
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ],
     "no-console": "error",
     "no-unused-vars": [
-      2,
-      { "args": "after-used", "argsIgnorePattern": "^(parent|args)" }
-    ],
-    "@typescript-eslint/no-unused-vars": [
       2,
       { "args": "after-used", "argsIgnorePattern": "^(parent|args)" }
     ],
