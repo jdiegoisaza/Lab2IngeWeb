@@ -1,10 +1,12 @@
+import { Header } from '@components/Header';
+
 interface LayoutProps {
   children: JSX.Element | JSX.Element[];
 }
 
 const Layout = ({ children }: LayoutProps) => (
   <>
-    <header></header>
+    <Header />
     <main>{children}</main>
     <footer></footer>
   </>
