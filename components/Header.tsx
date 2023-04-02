@@ -4,7 +4,7 @@ const Header = () => (
   <>
     <header className='flex h-full w-screen justify-center bg-[#fff159]'>
       <div className='mx-4 my-0 flex h-[100px] w-[1200px] flex-col justify-center gap-[20px]'>
-        <div className='relative flex items-center justify-center xs:flex-col xs:gap-1 lg:-left-4 lg:flex-row lg:justify-start lg:gap-[50px]'>
+        <div className='relative flex items-center justify-center xs:flex-col xs:gap-1 lg:-left-4 lg:flex-row lg:gap-[50px] xl:justify-start'>
           <svg
             width='134'
             height='34'
@@ -127,6 +127,9 @@ const Header = () => (
               </div>
             </div>
           </div>
+        </div>
+        <div className='absolute left-3 my-auto xl:hidden'>
+          <AiOutlineMenu color='black' size={24} />
         </div>
       </div>
     </header>
