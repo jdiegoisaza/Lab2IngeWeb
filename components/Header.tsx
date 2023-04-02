@@ -106,7 +106,7 @@ const Header = () => {
                 <li>Ayuda / PQR</li>
               </ul>
             </div>
-            <div className='absolute -bottom-[35px] right-0 flex'>
+            <div className='absolute -bottom-[30px] right-0 flex'>
               <ul className='flex h-full items-center justify-start gap-[10px] text-black'>
                 <li>Crea tu cuenta</li>
                 <li>Ingresa</li>
