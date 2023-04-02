@@ -1,10 +1,11 @@
+import { AiOutlineMenu, AiOutlineMenuUnfold } from 'react-icons/ai';
+
 const Header = () => (
   <>
     <header className='flex h-full w-screen justify-center bg-[#fff159]'>
       <div className='mx-4 my-0 flex h-[100px] w-[1200px] flex-col justify-center gap-[20px]'>
-        <div className='relative -left-4 flex items-center gap-[50px] justify-self-start'>
+        <div className='relative flex items-center justify-center xs:flex-col xs:gap-1 lg:-left-4 lg:flex-row lg:justify-start lg:gap-[50px]'>
           <svg
-            className='hidden lg:block'
             width='134'
             height='34'
             viewBox='0 0 134 34'
@@ -33,16 +34,16 @@ const Header = () => (
               />
             </defs>
           </svg>
-          <div>
+          <div className='flex'>
             <input
               type='text'
               placeholder='Buscar productos, marcas y más...'
-              className='shadowed h-[40px] w-[300px] border-none bg-white p-4 focus:outline-none lg:w-[600px]'
+              className='shadowed h-[40px] w-[200px] border-none bg-white p-4 focus:outline-none md:w-[400px] lg:w-[600px]'
             />
             <button
               type='button'
               title='search'
-              className='shadowed relative top-[3px] h-[40px] w-[40px] border-none bg-white'
+              className='shadowed relative h-[40px] w-[40px] border-none bg-white'
             >
               <svg
                 className='relative left-[10px]'
@@ -68,7 +69,7 @@ const Header = () => (
             </button>
           </div>
         </div>
-        <div className='relative hidden items-center justify-between gap-[100px] lg:flex'>
+        <div className='relative hidden items-center justify-between gap-[100px] xl:flex'>
           <div>
             <ul className='links flex h-full items-center justify-start gap-[30px] text-black'>
               <li className='mr-6 text-black'>Ingresa tu domicilio</li>
@@ -120,7 +121,7 @@ const Header = () => (
                     fill='black'
                   />
                 </svg>
-                <span className='relative -right-3 -top-8 text-[11px] text-xl font-bold text-white '>
+                <span className='relative -right-3 -top-8 text-[11px] text-base font-medium text-white '>
                   0
                 </span>
               </div>
