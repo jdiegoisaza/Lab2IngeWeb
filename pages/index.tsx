@@ -1,4 +1,5 @@
 import { Layout } from '@layouts/Layout';
+import { Main } from '@components/Main';
 import Head from 'next/head';
 
 const Home = () => (
@@ -10,7 +11,7 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
     <Layout>
-      <span></span>
+      <Main />
     </Layout>
   </>
 );
