@@ -1,3 +1,5 @@
+import { PaymentMethods } from '@sections/PaymentMethods';
+
 /* eslint-disable @next/next/no-img-element */
 const Main = () => (
   <>
@@ -5,16 +7,18 @@ const Main = () => (
     <img
       src='/promotion.png'
       alt='Promoción Semana de la Mujer'
-      className='shadowed m-auto h-auto w-full max-w-[1200px]'
+      className='shadowed m-auto h-auto w-full max-w-[1512px]'
     />
-    <section /> {/* Formas de Pago */}
-    <section /> {/* Ofertas */}
-    <section /> {/* Suscripción */}
-    <section /> {/* Beneficios */}
-    <section /> {/* Tiendas */}
-    <section /> {/* Descubre */}
-    <section /> {/* Colecciones: Supermercado */}
-    <section /> {/* Categorías */}
+    <div className='flex w-full flex-col items-center'>
+      <PaymentMethods /> {/* Formas de Pago */}
+      <section /> {/* Ofertas */}
+      <section /> {/* Suscripción */}
+      <section /> {/* Beneficios */}
+      <section /> {/* Tiendas */}
+      <section /> {/* Descubre */}
+      <section /> {/* Colecciones: Supermercado */}
+      <section /> {/* Categorías */}
+    </div>
   </>
 );
 export { Main };
