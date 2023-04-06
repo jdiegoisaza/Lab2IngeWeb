@@ -1,4 +1,5 @@
 import { PaymentMethods } from '@sections/PaymentMethods';
+import { ShoppingCartModal } from './modals/ShoppingCartModal';
 
 /* eslint-disable @next/next/no-img-element */
 const Main = () => (
@@ -19,6 +20,7 @@ const Main = () => (
       <section /> {/* Colecciones: Supermercado */}
       <section /> {/* Categorías */}
     </div>
+    <ShoppingCartModal />
   </>
 );
 export { Main };
