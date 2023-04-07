@@ -1,7 +1,7 @@
 import { PaymentMethodCard } from '@components/PaymentMethodCard';
 
 const PaymentMethods = () => (
-  <section className='shadowed mt-[40px] flex items-center rounded-[4px] bg-white'>
+  <section className='shadowed mt-[40px] flex flex-row items-center rounded-[4px] bg-white'>
     <div className='h-[90px] justify-around xs:hidden xs:w-[300px] md:flex xl:w-[915px]'>
       <PaymentMethodCard
         title='Hasta 48 cuotas'

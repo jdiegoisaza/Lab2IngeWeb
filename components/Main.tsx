@@ -1,5 +1,6 @@
 import { PaymentMethods } from '@sections/PaymentMethods';
 import { ShoppingCartModal } from './modals/ShoppingCartModal';
+import { Deals } from '@sections/Deals';
 
 /* eslint-disable @next/next/no-img-element */
 const Main = () => (
@@ -10,9 +11,9 @@ const Main = () => (
       alt='Promoción Semana de la Mujer'
       className='shadowed m-auto h-auto w-full max-w-[1512px]'
     />
-    <div className='flex w-full flex-col items-center'>
+    <div className='flex flex-col items-center'>
       <PaymentMethods /> {/* Formas de Pago */}
-      <section /> {/* Ofertas */}
+      <Deals /> {/* Ofertas */}
       <section /> {/* Suscripción */}
       <section /> {/* Beneficios */}
       <section /> {/* Tiendas */}
