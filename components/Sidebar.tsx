@@ -9,7 +9,7 @@ const Sidebar = () => {
     <aside
       className={`${
         isOpen ? 'flex' : 'hidden'
-      } shadowed absolute left-0 top-0 h-screen w-[220px] flex-col justify-between bg-[#fff159] xl:hidden`}
+      } shadowed absolute left-0 top-0 z-40 h-screen w-[220px] flex-col justify-between bg-[#fff159] xl:hidden`}
     >
       <div className='flex flex-col gap-4'>
         <button
