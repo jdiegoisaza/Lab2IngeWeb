@@ -14,7 +14,9 @@ const Layout = ({ children }: LayoutProps) => (
         <Header />
         <Sidebar />
       </SidebarContextProvider>
-      <main>{children}</main>
+      <main className='flex flex-col items-center justify-center bg-[#ebebeb]'>
+        {children}
+      </main>
       <footer></footer>
     </ShoppingCartContextProvider>
   </>

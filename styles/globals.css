@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply flex flex-col items-center bg-[#ebebeb] text-[13px];
+  @apply flex flex-col items-center overflow-x-hidden bg-[#ebebeb] text-[13px];
 }
 
 li {
@@ -20,4 +20,8 @@ li {
 
 .small-left-border {
   border-left: 1px solid #eeeeee;
+}
+
+section {
+  @apply flex flex-col gap-4;
 }
