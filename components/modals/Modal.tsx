@@ -20,7 +20,7 @@ const Modal = ({
 }: ModalProps) => (
   <Dialog open={open} onClose={() => setOpen(false)} maxWidth={maxWidth}>
     <DialogTitle>{modalTitle}</DialogTitle>
-    <DialogContent>{children}</DialogContent>
+    <DialogContent style={{ maxHeight: '515px' }}>{children}</DialogContent>
   </Dialog>
 );
 export { Modal };

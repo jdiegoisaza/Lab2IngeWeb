@@ -1,5 +1,6 @@
 import { Header } from '@components/Header';
 import { Sidebar } from '@components/Sidebar';
+import { ProductActionContextProvider } from '@context/ProductActionContext';
 import { ShoppingCartContextProvider } from '@context/ShoppingCartContext';
 import { SidebarContextProvider } from '@context/SidebarContext';
 
@@ -9,16 +10,18 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => (
   <>
-    <ShoppingCartContextProvider>
-      <SidebarContextProvider>
-        <Header />
-        <Sidebar />
-      </SidebarContextProvider>
-      <main className='flex flex-col items-center justify-center bg-[#ebebeb]'>
-        {children}
-      </main>
-      <footer></footer>
-    </ShoppingCartContextProvider>
+    <ProductActionContextProvider>
+      <ShoppingCartContextProvider>
+        <SidebarContextProvider>
+          <Header />
+          <Sidebar />
+        </SidebarContextProvider>
+        <main className='flex flex-col items-center justify-center bg-[#ebebeb]'>
+          {children}
+        </main>
+        <footer></footer>
+      </ShoppingCartContextProvider>
+    </ProductActionContextProvider>
   </>
 );
 
