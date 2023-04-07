@@ -1,7 +1,12 @@
+import { useProductActionContext } from '@context/ProductActionContext';
 import { useShoppingCartContext } from '@context/ShoppingCartContext';
 
 const ShoppingCart = () => {
   const { setOpenCartModal } = useShoppingCartContext();
+  const { cartProducts } = useProductActionContext();
+
+  const getTotalAmountOfProducts = () =>
+    cartProducts.reduce((acc, { amount }) => acc + (amount ?? 0), 0);
 
   return (
     <button
@@ -21,7 +26,7 @@ const ShoppingCart = () => {
         />
       </svg>
       <span className='relative -right-0.5 -top-8 text-[11px] text-base font-medium text-white '>
-        0
+        {getTotalAmountOfProducts()}
       </span>
     </button>
   );

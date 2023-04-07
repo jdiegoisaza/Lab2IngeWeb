@@ -33,22 +33,77 @@ const Deals = () => (
         arrows={false}
         customButtonGroup={<Arrows />}
       >
-        <DealCard price='210.900' discount={32} image='chair' freeShipping />
         <DealCard
-          price='74.990'
+          price={210900}
           discount={32}
+          image='chair'
+          imageDescription='Silla ejecutiva'
+          freeShipping
+        />
+        <DealCard
+          price={74990}
+          discount={25}
           image='mic'
+          imageDescription='Micrófono'
           freeShipping
           fullShipping
         />
-        <DealCard price='134.950' discount={32} image='razor' freeShipping />
-        <DealCard price='149.900' discount={32} image='shell' freeShipping />
-        <DealCard price='69.990' discount={32} image='curtains' fullShipping />
-        <DealCard price='50.000' discount={32} image='chair' freeShipping />
-        <DealCard price='90.050' discount={32} image='mic' fullShipping />
-        <DealCard price='567.500' discount={32} image='razor' freeShipping />
-        <DealCard price='20.425' discount={32} image='shell' fullShipping />
-        <DealCard price='33.210' discount={32} image='curtains' freeShipping />
+        <DealCard
+          price={134950}
+          discount={50}
+          image='razor'
+          imageDescription='Afeitadora'
+          freeShipping
+        />
+        <DealCard
+          price={149900}
+          discount={30}
+          image='shell'
+          imageDescription='Estantería'
+          freeShipping
+        />
+        <DealCard
+          price={69990}
+          discount={17}
+          image='curtains'
+          imageDescription='Cortinas'
+          fullShipping
+        />
+        <DealCard
+          price={50000}
+          discount={32}
+          image='chair'
+          imageDescription='Silla ejecutiva'
+          freeShipping
+        />
+        <DealCard
+          price={90050}
+          discount={25}
+          image='mic'
+          imageDescription='Micrófono'
+          fullShipping
+        />
+        <DealCard
+          price={567500}
+          discount={50}
+          image='razor'
+          imageDescription='Afeitadora'
+          freeShipping
+        />
+        <DealCard
+          price={20425}
+          discount={30}
+          image='shell'
+          imageDescription='Estantería'
+          fullShipping
+        />
+        <DealCard
+          price={33210}
+          discount={17}
+          image='curtains'
+          imageDescription='Cortinas'
+          freeShipping
+        />
       </Carousel>
     </div>
   </section>
