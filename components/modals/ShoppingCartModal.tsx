@@ -11,6 +11,7 @@ import {
   useProductActionContext,
 } from '@context/ProductActionContext';
 import { AiOutlineMinus, AiOutlinePlus, AiTwotoneDelete } from 'react-icons/ai';
+import { toast } from 'react-toastify';
 
 const priceFormat = (
   quantity: number = 1,
@@ -77,14 +78,22 @@ const ShoppingCartModal = () => {
                 <TableCell>
                   <div className='flex items-center justify-center gap-2'>
                     <button
-                      onClick={() =>
-                        addProductToCart({ id, name, price, discount })
-                      }
+                      onClick={() => {
+                        addProductToCart({ id, name, price, discount });
+                        toast.success(`${name} se ha agregado al carrito`);
+                      }}
                     >
                       <AiOutlinePlus />
                     </button>
                     {amount}
-                    <button onClick={() => removeProductFromCart(id, false)}>
+                    <button
+                      onClick={() => {
+                        removeProductFromCart(id, false);
+                        toast.warn(
+                          `Se ha eliminado el producto ${name} del carrito`
+                        );
+                      }}
+                    >
                       <AiOutlineMinus />
                     </button>
                   </div>
@@ -95,7 +104,12 @@ const ShoppingCartModal = () => {
                   {priceFormat(amount, price, discount)}
                 </TableCell>
                 <TableCell>
-                  <button onClick={() => removeProductFromCart(id, true)}>
+                  <button
+                    onClick={() => {
+                      removeProductFromCart(id, true);
+                      toast.warn(`Se ha removido ${name}  del carrito`);
+                    }}
+                  >
                     <AiTwotoneDelete />
                   </button>
                 </TableCell>
