@@ -2,7 +2,7 @@ const LeftDealArrow = ({ onClick, className }: any) => (
   <button
     className={`${
       className ? className : ''
-    } shadowed absolute -left-[50px] bottom-[130px] flex h-[80px] w-[80px] items-center justify-center rounded-[50%] bg-white md:h-[109px] md:w-[109px]`}
+    } carousel-arrow absolute -left-[50px] bottom-[130px] flex h-[80px] w-[80px] items-center justify-center rounded-[50%] bg-white md:h-[109px] md:w-[109px]`}
     onClick={onClick}
   >
     <svg
