@@ -1,5 +1,6 @@
 import { useProductActionContext } from '@context/ProductActionContext';
 import Image from 'next/image';
+import { toast } from 'react-toastify';
 
 interface DealCardProps {
   price: number;
@@ -27,6 +28,7 @@ const DealCard = ({
       price: price,
       discount: discount,
     });
+    toast.success(`${imageDescription} se ha agregado al carrito`);
   };
 
   return (
