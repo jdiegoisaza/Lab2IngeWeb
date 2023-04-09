@@ -1,6 +1,7 @@
 import { PaymentMethods } from '@sections/PaymentMethods';
 import { ShoppingCartModal } from './modals/ShoppingCartModal';
 import { Deals } from '@sections/Deals';
+import { PointsBenefits } from '@sections/PointsBenefits';
 
 /* eslint-disable @next/next/no-img-element */
 const Main = () => (
@@ -15,7 +16,7 @@ const Main = () => (
       <PaymentMethods /> {/* Formas de Pago */}
       <Deals /> {/* Ofertas */}
       <section /> {/* Suscripción */}
-      <section /> {/* Beneficios */}
+      <PointsBenefits /> {/* Beneficios */}
       <section /> {/* Tiendas */}
       <section /> {/* Descubre */}
       <section /> {/* Colecciones: Supermercado */}
