@@ -29,3 +29,8 @@ section {
 .carousel-arrow {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.ok-btn-blue {
+  background-color: #3483FA;
+  border-radius: 6px;
+}
