@@ -2,6 +2,7 @@ import { PaymentMethods } from '@sections/PaymentMethods';
 import { ShoppingCartModal } from './modals/ShoppingCartModal';
 import { Deals } from '@sections/Deals';
 import { PointsBenefits } from '@sections/PointsBenefits';
+import { SubscriptionComponent } from '@sections/Subscription';
 
 /* eslint-disable @next/next/no-img-element */
 const Main = () => (
@@ -15,7 +16,10 @@ const Main = () => (
     <div className='flex flex-col items-center'>
       <PaymentMethods /> {/* Formas de Pago */}
       <Deals /> {/* Ofertas */}
-      <section /> {/* Suscripción */}
+      
+      {/* Suscripción */}
+      <SubscriptionComponent/>
+      
       <PointsBenefits /> {/* Beneficios */}
       <section /> {/* Tiendas */}
       <section /> {/* Descubre */}
