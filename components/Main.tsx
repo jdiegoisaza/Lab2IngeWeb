@@ -5,6 +5,7 @@ import { PointsBenefits } from '@sections/PointsBenefits';
 import { SubscriptionComponent } from '@sections/Subscription';
 
 import { StoreComponent } from '@sections/Store';
+import { DiscoverComponent } from '@sections/Discover';
 
 
 /* eslint-disable @next/next/no-img-element */
@@ -21,7 +22,7 @@ const Main = () => (
       <Deals /> {/* Ofertas */}
       <SubscriptionComponent/>{/* Suscripción */}
       <PointsBenefits /> {/* Beneficios */}
-      <section /> {/* Descubre */}
+      <DiscoverComponent/> {/* Descubre */}
       <StoreComponent /> {/* Tiendas */}
       <section /> {/* Colecciones: Supermercado */}
       <section /> {/* Categorías */}
