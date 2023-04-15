@@ -7,6 +7,7 @@ import { SubscriptionComponent } from '@sections/Subscription';
 import { StoreComponent } from '@sections/Store';
 import { DiscoverComponent } from '@sections/Discover';
 import { Supermarket } from '@sections/Supermarket';
+import { Categories } from '@sections/Categories';
 
 /* eslint-disable @next/next/no-img-element */
 const Main = () => (
@@ -26,7 +27,7 @@ const Main = () => (
       <DiscoverComponent /> {/* Descubre */}
       <StoreComponent /> {/* Tiendas */}
       <Supermarket /> {/* Colecciones: Supermercado */}
-      <section /> {/* Categorías */}
+      <Categories /> {/* Categorías */}
     </div>
     <ShoppingCartModal />
   </>
