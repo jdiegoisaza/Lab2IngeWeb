@@ -21,7 +21,7 @@ const Supermarket = () => (
         </svg>
       }
     />
-    <div className='flex h-[384px] flex-col gap-4 xl:flex-row'>
+    <div className='flex flex-col gap-4 xl:flex-row'>
       <div className='shadowed flex w-[300px] max-w-[383px] flex-col rounded bg-white xl:w-full'>
         <div>
           <img
