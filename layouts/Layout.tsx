@@ -1,3 +1,4 @@
+import { Footer } from '@components/Footer';
 import { Header } from '@components/Header';
 import { Sidebar } from '@components/Sidebar';
 import { ProductActionContextProvider } from '@context/ProductActionContext';
@@ -19,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => (
         <main className='flex flex-col items-center justify-center bg-[#ebebeb]'>
           {children}
         </main>
-        <footer></footer>
+        <Footer />
       </ShoppingCartContextProvider>
     </ProductActionContextProvider>
   </>

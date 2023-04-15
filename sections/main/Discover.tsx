@@ -1,4 +1,5 @@
 import { SectionTitle } from '@components/SectionTitle';
+import { Fragment } from 'react';
 
 const ITEMS = [
   {
@@ -30,9 +31,11 @@ export const DiscoverComponent = () => (
               <span className='text-xs'>{item.title}</span>
 
               {item.body.map((bodyValue) => (
-                <>
+                <Fragment
+                  key={`item__body__${[...bodyValue].splice(0, 2).join('')}`}
+                >
                   <span className='text-2xl font-semibold'> {bodyValue} </span>
-                </>
+                </Fragment>
               ))}
 
               <div className='flex cursor-pointer justify-center px-12 py-4 text-white'>

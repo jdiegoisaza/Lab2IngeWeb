@@ -1,13 +1,12 @@
-import { PaymentMethods } from '@sections/PaymentMethods';
-import { ShoppingCartModal } from './modals/ShoppingCartModal';
-import { Deals } from '@sections/Deals';
-import { PointsBenefits } from '@sections/PointsBenefits';
-import { SubscriptionComponent } from '@sections/Subscription';
-
-import { StoreComponent } from '@sections/Store';
-import { DiscoverComponent } from '@sections/Discover';
-import { Supermarket } from '@sections/Supermarket';
-import { Categories } from '@sections/Categories';
+import { PaymentMethods } from '@sections/main/PaymentMethods';
+import { ShoppingCartModal } from '@components/modals/ShoppingCartModal';
+import { Deals } from '@sections/main/Deals';
+import { PointsBenefits } from '@sections/main/PointsBenefits';
+import { SubscriptionComponent } from '@sections/main/Subscription';
+import { StoreComponent } from '@sections/main/Store';
+import { DiscoverComponent } from '@sections/main/Discover';
+import { Supermarket } from '@sections/main/Supermarket';
+import { Categories } from '@sections/main/Categories';
 
 /* eslint-disable @next/next/no-img-element */
 const Main = () => (
