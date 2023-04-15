@@ -64,7 +64,11 @@ export const StoreComponent = () => (
           >
             <div className='rounded-xl bg-white pb-4'>
               <div className='item-header'>
-                <img className='rounded-t-lg' src={item.picHeader} alt='' />
+                <img
+                  className='w-full rounded-t-lg'
+                  src={item.picHeader}
+                  alt=''
+                />
               </div>
 
               <div className='-mt-10 flex items-center justify-center'>
