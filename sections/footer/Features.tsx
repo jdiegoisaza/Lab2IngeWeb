@@ -1,7 +1,7 @@
 const Features = () => (
   <section className='w-full' style={{ borderBottom: '1px solid #e6e6e6' }}>
     <section className='mx-auto my-0 flex min-h-[355px] flex-row flex-wrap items-center justify-center gap-0 text-center'>
-      <div className='flex h-[260px] w-[400px] flex-col'>
+      <div className='flex h-[260px] flex-col xs:w-[250px] sm:w-[400px]'>
         <div className='flex h-[58px] flex-col items-center justify-end'>
           <svg
             width='66'
@@ -127,7 +127,7 @@ const Features = () => (
           <span>Cómo pagar con Mercado Pago</span>
         </div>
       </div>
-      <div className='flex h-[260px] w-[400px] flex-col'>
+      <div className='flex h-[260px] flex-col xs:w-[250px] sm:w-[400px]'>
         <div className='flex h-[58px] flex-col items-center justify-end'>
           <svg
             width='56'
@@ -212,7 +212,7 @@ const Features = () => (
           <span>Conoce más sobre este beneficio</span>
         </div>
       </div>
-      <div className='flex h-[260px] w-[400px] flex-col'>
+      <div className='flex h-[260px] flex-col xs:w-[250px] sm:w-[400px]'>
         <div className='flex h-[58px] flex-col items-center justify-end'>
           <svg
             width='52'
