@@ -1,6 +1,6 @@
 interface SectionTitleProps {
   title: string;
-  subtitle: string;
+  subtitle: string | JSX.Element;
   className?: string;
 }
 

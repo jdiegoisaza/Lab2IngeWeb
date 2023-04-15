@@ -6,7 +6,7 @@ import { SubscriptionComponent } from '@sections/Subscription';
 
 import { StoreComponent } from '@sections/Store';
 import { DiscoverComponent } from '@sections/Discover';
-
+import { Supermarket } from '@sections/Supermarket';
 
 /* eslint-disable @next/next/no-img-element */
 const Main = () => (
@@ -20,11 +20,12 @@ const Main = () => (
     <div className='flex flex-col items-center'>
       <PaymentMethods /> {/* Formas de Pago */}
       <Deals /> {/* Ofertas */}
-      <SubscriptionComponent/>{/* Suscripción */}
+      <SubscriptionComponent />
+      {/* Suscripción */}
       <PointsBenefits /> {/* Beneficios */}
-      <DiscoverComponent/> {/* Descubre */}
+      <DiscoverComponent /> {/* Descubre */}
       <StoreComponent /> {/* Tiendas */}
-      <section /> {/* Colecciones: Supermercado */}
+      <Supermarket /> {/* Colecciones: Supermercado */}
       <section /> {/* Categorías */}
     </div>
     <ShoppingCartModal />
