@@ -16,20 +16,20 @@ const ITEMS = [
 export const SubscriptionComponent = () => (
   <section className='mt-[50px] max-w-[1200px] xs:w-[300px] sm:w-[500px] xl:w-full'>
     <div id='subscription-section' className='relative rounded-md bg-white'>
-      <div className='gradient flex flex-col justify-between rounded-t-lg md:flex-row'>
+      <div className='gradient flex h-[90px] flex-col justify-between rounded-t-lg bg-[#A90F90] md:flex-row'>
         <div className='flex items-center pl-8'>
           <span className='text-2xl text-white'>Suscríbete al nivel 6</span>
         </div>
 
         <div className='flex items-center px-6 pr-4 md:px-2'>
-          <div className='r-side border-l-white pl-3'>
+          <div className='md:r-side border-l-white pl-3'>
             <div>
-              <span className='white-EBEBEB text-sm line-through'>
+              <span className='text-sm text-[#EBEBEB] line-through'>
                 $ 50.690
               </span>
             </div>
 
-            <div className='white-EBEBEB'>
+            <div className='text-[#EBEBEB]'>
               <span className='text-xl'>$ 17.899</span>
               <span className='text-sm'> / mes</span>
             </div>
@@ -43,7 +43,6 @@ export const SubscriptionComponent = () => (
         </span>
       </div>
 
-      {/* <!-- BENEFITS --> */}
       <div className='benefits flex flex-col justify-center md:flex-row'>
         {ITEMS.map((item, index) => (
           <div className='flex w-full align-middle md:w-1/3' key={index}>
@@ -62,7 +61,9 @@ export const SubscriptionComponent = () => (
 
       {/* <!-- SUBSRIBE BUTTON --> */}
       <div className='flex justify-end'>
-        <div className='subscribe-btn cursor-pointer'>Suscríbete</div>
+        <div className='m-3 cursor-pointer rounded-md bg-[#3483fa] px-[30px] py-2 text-[15px] font-semibold text-[#ffffff]'>
+          Suscríbete
+        </div>
       </div>
     </div>
   </section>

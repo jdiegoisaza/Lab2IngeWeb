@@ -53,7 +53,7 @@ export const StoreComponent = () => (
       <SectionTitle
         title='Las mejores tiendas te esperan'
         subtitle='Ver tiendas'
-        className='mt-[70px]'
+        className='mt-[20px]'
       />
 
       <div className='flex flex-wrap'>

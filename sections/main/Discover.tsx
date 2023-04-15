@@ -19,8 +19,7 @@ const ITEMS = [
 export const DiscoverComponent = () => (
   <section className='mt-[50px] max-w-[1200px] xs:w-[300px] sm:w-[500px] xl:w-full'>
     <div id='discover-section' className='w-full'>
-      <SectionTitle title='Descubre' subtitle='' className='mt-[70px]' />
-
+      <SectionTitle title='Descubre' subtitle='' className='mt-[30px]' />
       <div className='mt-4 flex w-full flex-col space-y-2 lg:flex-row lg:space-x-2 lg:space-y-0'>
         {ITEMS.map((item) => (
           <div
@@ -39,7 +38,7 @@ export const DiscoverComponent = () => (
               ))}
 
               <div className='flex cursor-pointer justify-center px-12 py-4 text-white'>
-                <div className='ok-btn-blue px-8 py-2 text-center text-lg'>
+                <div className='rounded-[6px] bg-[#3483FA] px-8 py-2 text-center text-lg'>
                   {item.textBtn}
                 </div>
               </div>
