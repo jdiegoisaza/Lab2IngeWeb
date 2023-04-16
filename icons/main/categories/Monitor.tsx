@@ -1,0 +1,36 @@
+const Monitor = () => (
+  <svg
+    className='m-auto block'
+    width='45'
+    height='43'
+    viewBox='0 0 45 43'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'
+  >
+    <path
+      d='M22.5 39.375V33.375'
+      stroke='#3483FA'
+      strokeMiterlimit='10'
+      strokeLinecap='square'
+    />
+    <path
+      d='M10.5 41.375C10.5 41.375 15.5 39.375 22.5 39.375C29.5 39.375 34.5 41.375 34.5 41.375'
+      stroke='#3483FA'
+      strokeMiterlimit='10'
+      strokeLinecap='square'
+    />
+    <path
+      d='M44.5 1.375H0.5V33.375H44.5V1.375Z'
+      stroke='#3483FA'
+      strokeMiterlimit='10'
+      strokeLinecap='square'
+    />
+    <path
+      d='M0.5 27.375H44.5'
+      stroke='#3483FA'
+      strokeMiterlimit='10'
+      strokeLinecap='square'
+    />
+  </svg>
+);
+export { Monitor };

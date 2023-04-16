@@ -1,25 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { SectionTitle } from '@components/SectionTitle';
+import { DownChevron } from 'icons/main/supermarket/DownChevron';
 
 const Supermarket = () => (
   <section className='mt-[54px] max-w-[1200px] xs:w-[300px] sm:w-[500px] xl:w-full'>
     <SectionTitle
       title='Colecciones: Supermercado'
-      subtitle={
-        <svg
-          width='15'
-          height='9'
-          viewBox='0 0 15 9'
-          fill='none'
-          xmlns='http://www.w3.org/2000/svg'
-        >
-          <path
-            d='M13.7149 0.75L7.44338 7.0065L1.17188 0.75'
-            stroke='#3483FA'
-            strokeWidth='1.5'
-          />
-        </svg>
-      }
+      subtitle={<DownChevron />}
     />
     <div className='flex flex-col gap-4 xl:flex-row'>
       <div className='shadowed flex w-[300px] max-w-[383px] flex-col rounded bg-white xl:w-full'>
