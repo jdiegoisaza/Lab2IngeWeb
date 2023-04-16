@@ -1,3 +1,4 @@
+import { CategoryCard } from '@components/CategoryCard';
 import { SectionTitle } from '@components/SectionTitle';
 import { Ball } from 'icons/main/categories/Ball';
 import { Bear } from 'icons/main/categories/Bear';
@@ -18,118 +19,20 @@ const Categories = () => (
   <section className='mb-[18px] mt-[54px] max-w-[1200px] xs:w-[300px] sm:w-[500px] xl:w-full'>
     <SectionTitle title='Categorías populares' />
     <div className='grid grid-cols-2 gap-[1px] md:grid-cols-3 xl:grid-cols-7'>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Car />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Carros, Motos y Otros</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Monitor />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Computación</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Shirt />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Ropa y Accesorios</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Sofa />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Hogar y Muebles</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Handlebar />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Accesorios para Vehículos</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Stove />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Electrodomésticos</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Camera />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Cámaras y Accesorios</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Phone />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Celulares y Teléfonos</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <LipStick />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Belleza y Cuidado Personal</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Ball />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Deportes y Fitness</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Mic />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Electrónica, Audio y Video</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Controller />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Consolas y Videojuegos</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Bear />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Juegos y Juguetes</span>
-        </div>
-      </div>
-      <div className='shadowed flex h-[170px] w-[170px] flex-col items-center justify-center gap-[10px] bg-white'>
-        <div className='mt-4 h-[48px] w-[48px]'>
-          <Spanner />
-        </div>
-        <div className='flex h-[35px] justify-start px-[13px] text-center text-[14px]'>
-          <span className='text-[#333333]'>Herramientas</span>
-        </div>
-      </div>
+      <CategoryCard icon={<Car />} title='Carros, Motos y Otros' />
+      <CategoryCard icon={<Monitor />} title='Computación' />
+      <CategoryCard icon={<Shirt />} title='Ropa y Accesorios' />
+      <CategoryCard icon={<Sofa />} title='Hogar y Muebles' />
+      <CategoryCard icon={<Handlebar />} title='Accesorios para Vehículos' />
+      <CategoryCard icon={<Stove />} title='Electrodomésticos' />
+      <CategoryCard icon={<Camera />} title='Cámaras y Accesorios' />
+      <CategoryCard icon={<Phone />} title='Celulares y Teléfonos' />
+      <CategoryCard icon={<LipStick />} title='Belleza y Cuidado Personal' />
+      <CategoryCard icon={<Ball />} title='Deportes y Fitness' />
+      <CategoryCard icon={<Mic />} title='Electrónica, Audio y Video' />
+      <CategoryCard icon={<Controller />} title='Consolas y Videojuegos' />
+      <CategoryCard icon={<Bear />} title='Juegos y Juguetes' />
+      <CategoryCard icon={<Spanner />} title='Herramientas' />
     </div>
   </section>
 );
