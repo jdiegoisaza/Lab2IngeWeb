@@ -72,36 +72,36 @@ const Deals = () => (
         <DealCard
           price={50000}
           discount={32}
-          image='chair'
-          imageDescription='Silla ejecutiva'
+          image='chair2'
+          imageDescription='Silla gerencial'
           freeShipping
         />
         <DealCard
           price={90050}
           discount={25}
-          image='mic'
-          imageDescription='Micrófono'
+          image='mic2'
+          imageDescription='Micrófono de Estudio'
           fullShipping
         />
         <DealCard
           price={567500}
           discount={50}
-          image='razor'
-          imageDescription='Afeitadora'
+          image='razor2'
+          imageDescription='Afeitadora inalambrica'
           freeShipping
         />
         <DealCard
           price={20425}
           discount={30}
-          image='shell'
-          imageDescription='Estantería'
+          image='shell2'
+          imageDescription='Estantería de Roble'
           fullShipping
         />
         <DealCard
           price={33210}
           discount={17}
-          image='curtains'
-          imageDescription='Cortinas'
+          image='curtains2'
+          imageDescription='Cortinas de Seda'
           freeShipping
         />
       </Carousel>

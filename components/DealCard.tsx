@@ -38,7 +38,7 @@ const DealCard = ({
       onClick={handleClick}
     >
       <Image
-        src={`/images/${image}.png`}
+        src={`/images/deals/${image}.png`}
         alt='Silla ejecutiva'
         width={'224'}
         height={'224'}
